@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".detailPahlawan"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#FAFAFA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                >
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:id="@+id/ivPahlawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_launcher_background"></ImageView>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tvPahlawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hallo"
+                android:paddingTop="30dp"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tvDetailPahlawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:paddingTop="2dp"
+                android:text="my name is ..."
+                android:textSize="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:justificationMode="inter_word"
+                android:paddingBottom="20dp"
+                ></TextView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
